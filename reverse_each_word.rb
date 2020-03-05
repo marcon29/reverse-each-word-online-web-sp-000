@@ -1,11 +1,9 @@
-# sentence = "Hello there, and how are you?"
-
-# original solution, no iterating - simplest (least lines of code)
+####### original solution, no iterating - simplest (least lines of code)
 # def reverse_each_word(sentence)
 #   sentence.reverse.split(" ").reverse.join(" ")
 # end
 
-# assignment dummy solution, uses .each)
+####### assignment dummy solution, uses .each)
 # def reverse_each_word(sentence)
 #   array = sentence.split(" ")
 #   array_rev = []
@@ -13,7 +11,7 @@
 #   array_rev.join(" ")
 # end
 
-# assignment tested solution, uses .collect)
+####### assignment tested solution, uses .collect)
 def reverse_each_word(sentence)
   array = sentence.split(" ")
   array.collect{|word| word.reverse}.join(" ")
